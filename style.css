@@ -183,6 +183,68 @@ body {
     font-size: 18px;
 }
 
+/* =========================
+   About
+========================= */
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.about-text h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.about-text p {
+    color: #9299a8;
+    font-size: 17px;
+    margin-bottom: 18px;
+}
+
+.about-info {
+    border-right: 1px solid #252d3d;
+    padding-right: 30px;
+}
+
+.info-item {
+    padding: 18px 0;
+    border-bottom: 1px solid #202635;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-item span {
+    color: #686f7d;
+    font-size: 14px;
+}
+
+.info-item strong {
+    color: #dce0e7;
+    font-weight: 500;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-info {
+        border-right: none;
+        padding-right: 0;
+    }
+
+}
 
 /* =========================
    Skills
