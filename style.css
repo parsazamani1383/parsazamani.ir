@@ -1,1 +1,271 @@
+/* =========================
+   Reset
+========================= */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b0f19;
+    color: #f5f5f5;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 25px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    color: #aeb4c2;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    max-width: 1100px;
+    min-height: 80vh;
+    margin: auto;
+    padding: 70px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-text {
+    max-width: 650px;
+}
+
+.hello {
+    color: #7c8cff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    color: #b7bdc9;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.description {
+    color: #9299a8;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+
+/* =========================
+   Social Links
+========================= */
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #ffffff;
+
+    border: 1px solid #303746;
+    padding: 8px 18px;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    background: #ffffff;
+    color: #0b0f19;
+}
+
+
+/* =========================
+   Photo
+========================= */
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-placeholder {
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid #303746;
+
+    color: #777f90;
+    font-size: 18px;
+}
+
+
+/* =========================
+   Sections
+========================= */
+
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 100px 30px;
+}
+
+.section-label {
+    color: #7c8cff;
+    margin-bottom: 10px;
+}
+
+.section h2 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.section > p:last-child {
+    color: #9299a8;
+    max-width: 750px;
+    font-size: 18px;
+}
+
+
+/* =========================
+   Skills
+========================= */
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span {
+    background: #151b29;
+    border: 1px solid #252d3d;
+
+    padding: 10px 18px;
+    border-radius: 8px;
+
+    color: #c9ced8;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+
+    border-top: 1px solid #202635;
+
+    color: #686f7d;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        padding: 20px;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .photo-placeholder {
+        width: 220px;
+        height: 220px;
+    }
+
+    .section {
+        padding: 70px 25px;
+    }
+
+    .section h2 {
+        font-size: 32px;
+    }
+}
