@@ -250,22 +250,58 @@ body {
    Skills
 ========================= */
 
-.skills {
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 28px;
+
+    background: #111725;
+    border: 1px solid #252d3d;
+    border-radius: 14px;
+
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    border-color: #46506a;
+}
+
+.skill-card h3 {
+    font-size: 21px;
+    margin-bottom: 22px;
+}
+
+.skill-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 9px;
 }
 
-.skills span {
-    background: #151b29;
-    border: 1px solid #252d3d;
+.skill-list span {
+    padding: 7px 12px;
 
-    padding: 10px 18px;
-    border-radius: 8px;
+    background: #1a2130;
+    border-radius: 6px;
 
-    color: #c9ced8;
+    color: #aeb5c4;
+    font-size: 14px;
 }
 
+
+/* Mobile */
+
+@media (max-width: 850px) {
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
 
 /* =========================
    Footer
