@@ -141,20 +141,19 @@ body {
     align-items: center;
 }
 
-.photo-placeholder {
+.profile-image {
     width: 280px;
     height: 280px;
-
     border-radius: 50%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    overflow: hidden;
     border: 2px solid #303746;
+}
 
-    color: #777f90;
-    font-size: 18px;
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 
