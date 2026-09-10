@@ -1,10 +1,30 @@
+```html
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="وب‌سایت شخصی پارسا زمانی، دانشجوی مهندسی کامپیوتر و علاقه‌مند به هوش مصنوعی، یادگیری ماشین، الگوریتم‌ها و مهندسی نرم‌افزار."
+    >
+
+    <meta
+        name="keywords"
+        content="پارسا زمانی, Parsa Zamani, Computer Engineering, Artificial Intelligence, Machine Learning, Programming"
+    >
+
+    <meta name="author" content="Parsa Zamani">
 
     <title>پارسا زمانی | مهندسی کامپیوتر و هوش مصنوعی</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap"
@@ -16,54 +36,142 @@
 
 <body>
 
+    <!-- =========================
+         Navbar
+    ========================== -->
+
     <header class="navbar">
 
-        <a href="#" class="logo">ParsaZamani.</a>
+        <a href="#home" class="logo">
+            Parsa<span>.</span>
+        </a>
 
-        <nav>
+        <nav class="desktop-nav">
             <a href="#about">درباره من</a>
             <a href="#skills">مهارت‌ها</a>
             <a href="#projects">پروژه‌ها</a>
-            <a href="#contact">ارتباط با من</a>
+            <a href="#tolpam">Tolpam Academy</a>
+            <a href="#contact">ارتباط</a>
         </nav>
+
+        <a href="#contact" class="nav-button">
+            تماس با من
+        </a>
 
     </header>
 
 
     <main>
 
-        <!-- Hero -->
-        <section class="hero">
+        <!-- =========================
+             Hero
+        ========================== -->
 
-            <div class="hero-text">
+        <section id="home" class="hero">
 
-                <p class="hello">سلام، من</p>
+            <div class="hero-content">
 
-                <h1>پارسا زمانی</h1>
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    Computer Engineering Student
+                </div>
+
+                <p class="hero-greeting">
+                    سلام، من
+                </p>
+
+                <h1>
+                    پارسا زمانی
+                </h1>
 
                 <h2>
                     دانشجوی مهندسی کامپیوتر
+                    <span>و علاقه‌مند به دنیای AI</span>
                 </h2>
 
-                <p class="description">
-                    علاقه‌مند به هوش مصنوعی، یادگیری ماشین، علم داده.
-                    و تولید محتوا در زمینه علوم کامپیوتر، و کسب فناوری های جدید..
+                <p class="hero-description">
+                    علاقه‌مند به هوش مصنوعی، یادگیری ماشین،
+                    الگوریتم‌ها و مهندسی نرم‌افزار؛
+                    در کنار یادگیری، روی پروژه‌های مختلف کار می‌کنم
+                    و محتوای آموزشی در زمینه علوم کامپیوتر تولید می‌کنم.
                 </p>
 
-                <div class="social-links">
-                    <a href="#" target="_blank">GitHub</a>
-                    <a href="#" target="_blank">YouTube</a>
-                    <a href="#" target="_blank">Telegram</a>
+                <div class="hero-actions">
+
+                    <a href="#projects" class="primary-button">
+                        مشاهده پروژه‌ها
+                        <span>←</span>
+                    </a>
+
+                    <a href="#contact" class="secondary-button">
+                        ارتباط با من
+                    </a>
+
+                </div>
+
+                <div class="hero-socials">
+
+                    <a href="#" target="_blank" rel="noopener">
+                        GitHub
+                    </a>
+
+                    <span>/</span>
+
+                    <a href="#" target="_blank" rel="noopener">
+                        YouTube
+                    </a>
+
+                    <span>/</span>
+
+                    <a href="#" target="_blank" rel="noopener">
+                        Telegram
+                    </a>
+
                 </div>
 
             </div>
 
 
-            <div class="hero-image">
+            <div class="hero-visual">
 
-                <!-- عکس شما بعداً اینجا قرار می‌گیرد -->
-                <div class="profile-image">
-                    <img src="acsses/profile.jpg" alt="پارسا زمانی">
+                <div class="visual-glow"></div>
+
+                <div class="profile-frame">
+
+                    <div class="profile-top-line">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="profile-image">
+                        <img
+                            src="acsses/profile.jpg"
+                            alt="تصویر پارسا زمانی"
+                        >
+                    </div>
+
+                    <div class="profile-caption">
+                        <span>Parsa Zamani</span>
+                        <small>Computer Engineering</small>
+                    </div>
+
+                </div>
+
+                <div class="floating-card card-one">
+                    <span class="card-icon">&lt;/&gt;</span>
+                    <div>
+                        <strong>Code</strong>
+                        <small>Build & Learn</small>
+                    </div>
+                </div>
+
+                <div class="floating-card card-two">
+                    <span class="card-icon">AI</span>
+                    <div>
+                        <strong>Artificial</strong>
+                        <small>Intelligence</small>
+                    </div>
                 </div>
 
             </div>
@@ -71,249 +179,763 @@
         </section>
 
 
-        <!-- About -->
+        <!-- =========================
+             About
+        ========================== -->
+
         <section id="about" class="section">
 
-    <p class="section-label">01 — درباره من</p>
+            <div class="section-heading">
 
-    <div class="about-content">
+                <div>
+                    <span class="section-number">01</span>
+                    <span class="section-label">درباره من</span>
+                </div>
 
-        <div class="about-text">
+                <span class="section-line"></span>
 
-            <h2>درباره من</h2>
-
-            <p>
-                من پارسا زمانی، دانشجوی مهندسی کامپیوتر هستم.
-                علاقه اصلی من در دنیای تکنولوژی، هوش مصنوعی،
-                یادگیری ماشین و علم داده است.
-                در زمینه تولید محتوا در یوتیوب فعالیت دارم و یه کانال آموزشی 
-                به نام Tolpam Academy در یوتیوب دارم که عمده فعالیت تولید محتوای من 
-                اونجاست.
-            </p>
-
-            <p>
-                در زمینه تولید محتوا در یوتیوب فعالیت دارم و یه کانال آموزشی 
-                به نام Tolpam Academy در یوتیوب دارم که عمده فعالیت تولید محتوای من 
-                اونجاست.
-            </p>
-
-        </div>
-
-
-        <div class="about-info">
-
-            <div class="info-item">
-                <span>رشته</span>
-                <strong>مهندسی کامپیوتر</strong>
             </div>
 
-            <div class="info-item">
-                <span>تمرکز</span>
-                <strong>AI / Machine Learning / Algorithm / Database</strong>
+
+            <div class="about-grid">
+
+                <div class="about-main">
+
+                    <h2>
+                        در حال ساختن مسیرم
+                        <span>در دنیای کامپیوتر</span>
+                    </h2>
+
+                    <p>
+                        من پارسا زمانی، دانشجوی مهندسی کامپیوتر هستم.
+                        علاقه اصلی من در دنیای فناوری، هوش مصنوعی،
+                        یادگیری ماشین، الگوریتم‌ها و مهندسی نرم‌افزار است.
+                    </p>
+
+                    <p>
+                        در کنار مسیر دانشگاهی، سعی می‌کنم با انجام پروژه‌های
+                        عملی، یادگیری مداوم و بررسی فناوری‌های جدید،
+                        دانش خودم را توسعه بدهم.
+                    </p>
+
+                    <p>
+                        همچنین در زمینه تولید محتوای آموزشی فعالیت می‌کنم
+                        و از طریق <strong>Tolpam Academy</strong> محتوایی
+                        در زمینه علوم کامپیوتر و ریاضیات تولید می‌کنم.
+                    </p>
+
+                </div>
+
+
+                <div class="about-details">
+
+                    <div class="detail-item">
+                        <span>رشته</span>
+                        <strong>مهندسی کامپیوتر</strong>
+                    </div>
+
+                    <div class="detail-item">
+                        <span>تمرکز اصلی</span>
+                        <strong>
+                            AI / ML / Algorithms
+                        </strong>
+                    </div>
+
+                    <div class="detail-item">
+                        <span>علاقه‌مندی‌ها</span>
+                        <strong>
+                            Computer Science & Technology
+                        </strong>
+                    </div>
+
+                    <div class="detail-item">
+                        <span>فعالیت جانبی</span>
+                        <strong>
+                            تولید محتوای آموزشی
+                        </strong>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="info-item">
-                <span>علاقه‌مند به</span>
-                <strong> The field of artificial intelligence.</strong>
+        </section>
+
+
+        <!-- =========================
+             What I Do
+        ========================== -->
+
+        <section class="section capabilities-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">02</span>
+                    <span class="section-label">زمینه‌های فعالیت</span>
+                </div>
+
+                <span class="section-line"></span>
+
             </div>
 
-            <div class="info-item">
-                <span>هدف</span>
-                <strong>کسب مهارت های بیشتر و آشنایی با فناوری های جدید.</strong>
+
+            <div class="capabilities">
+
+                <article class="capability-card">
+
+                    <div class="capability-number">
+                        01
+                    </div>
+
+                    <div class="capability-icon">
+                        AI
+                    </div>
+
+                    <h3>
+                        هوش مصنوعی
+                    </h3>
+
+                    <p>
+                        یادگیری مفاهیم هوش مصنوعی،
+                        یادگیری ماشین و تحلیل داده.
+                    </p>
+
+                </article>
+
+
+                <article class="capability-card">
+
+                    <div class="capability-number">
+                        02
+                    </div>
+
+                    <div class="capability-icon">
+                        &lt;/&gt;
+                    </div>
+
+                    <h3>
+                        برنامه‌نویسی
+                    </h3>
+
+                    <p>
+                        توسعه نرم‌افزار با استفاده از
+                        Python، C++ و سایر فناوری‌ها.
+                    </p>
+
+                </article>
+
+
+                <article class="capability-card">
+
+                    <div class="capability-number">
+                        03
+                    </div>
+
+                    <div class="capability-icon">
+                        ∑
+                    </div>
+
+                    <h3>
+                        علوم کامپیوتر
+                    </h3>
+
+                    <p>
+                        الگوریتم‌ها، ساختمان داده،
+                        پایگاه داده و مباحث بنیادی.
+                    </p>
+
+                </article>
+
+
+                <article class="capability-card">
+
+                    <div class="capability-number">
+                        04
+                    </div>
+
+                    <div class="capability-icon">
+                        ▶
+                    </div>
+
+                    <h3>
+                        تولید محتوا
+                    </h3>
+
+                    <p>
+                        تولید محتوای آموزشی در زمینه
+                        علوم کامپیوتر و ریاضیات.
+                    </p>
+
+                </article>
+
             </div>
 
-        </div>
-
-    </div>
-
-</section>
+        </section>
 
 
-        <!-- Skills -->
+        <!-- =========================
+             Skills
+        ========================== -->
+
         <section id="skills" class="section">
 
-    <p class="section-label">02 — مهارت‌ها</p>
+            <div class="section-heading">
 
-    <h2>مهارت‌های من</h2>
+                <div>
+                    <span class="section-number">03</span>
+                    <span class="section-label">مهارت‌ها</span>
+                </div>
 
-    <div class="skills-grid">
+                <span class="section-line"></span>
 
-        <div class="skill-card">
-            <h3>Programming & Software Engineering</h3>
-
-            <div class="skill-list">
-                <span>Python</span>
-                <span>C/C++</span>
-                <span>Java</span>
-                <span>Data Structure</span>
-                <span>Algorithms</span>
-                <span>Database</span>
-                <span>SQL</span>
             </div>
-        </div>
 
 
-        <div class="skill-card">
-            <h3>AI & Data</h3>
+            <div class="skills-header">
 
-            <div class="skill-list">
-                <span>Machine Learning</span>
-                <span>Data Science</span>
-                <span>NumPy</span>
-                <span>Pandas</span>
-                <span>Scikit-learn</span>
+                <h2>
+                    ابزارهایی که با آن‌ها
+                    <span>کار می‌کنم</span>
+                </h2>
+
+                <p>
+                    مجموعه‌ای از زبان‌های برنامه‌نویسی،
+                    فناوری‌ها و ابزارهایی که در مسیر یادگیری
+                    و پروژه‌ها با آن‌ها کار کرده‌ام.
+                </p>
+
             </div>
-        </div>
 
 
-        <div class="skill-card">
-            <h3>Tools & Technologies</h3>
+            <div class="skills-grid">
 
-            <div class="skill-list">
-                <span>Git</span>
-                <span>GitHub</span>
-                <span>Linux</span>
-                <span>PostgreSQL</span>
+                <div class="skill-group">
+
+                    <div class="skill-group-header">
+                        <span>01</span>
+                        <h3>Programming</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span>Python</span>
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Java</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-group">
+
+                    <div class="skill-group-header">
+                        <span>02</span>
+                        <h3>Computer Science</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span>Data Structures</span>
+                        <span>Algorithms</span>
+                        <span>Database</span>
+                        <span>SQL</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-group">
+
+                    <div class="skill-group-header">
+                        <span>03</span>
+                        <h3>AI & Data</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span>Machine Learning</span>
+                        <span>Data Science</span>
+                        <span>NumPy</span>
+                        <span>Pandas</span>
+                        <span>Scikit-learn</span>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-group">
+
+                    <div class="skill-group-header">
+                        <span>04</span>
+                        <h3>Tools</h3>
+                    </div>
+
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Linux</span>
+                        <span>PostgreSQL</span>
+                        <span>VS Code</span>
+                    </div>
+
+                </div>
+
             </div>
-        </div>
 
-    </div>
+        </section>
 
-</section>
+
+        <!-- =========================
+             Projects
+        ========================== -->
 
         <section id="projects" class="section">
 
-    <p class="section-label">03 — پروژه‌ها</p>
+            <div class="section-heading">
 
-    <h2>پروژه‌های من</h2>
+                <div>
+                    <span class="section-number">04</span>
+                    <span class="section-label">پروژه‌ها</span>
+                </div>
 
-    <div class="projects">
+                <span class="section-line"></span>
 
-        <!-- EnergiTrack -->
-        <div class="project-card">
-
-            <div class="project-number">01</div>
-
-            <h3>EnergiTrack</h3>
-
-            <p>
-                یک سیستم مدیریت و تحلیل مصرف انرژی
-                برای کارخانه‌های صنعتی که با PostgreSQL طراحی شده است.
-            </p>
-
-            <div class="project-tags">
-                <span>PostgreSQL</span>
-                <span>SQL</span>
-                <span>Data Science</span>
             </div>
 
-            <a href="#" class="project-link">
-                مشاهده پروژه ←
-            </a>
 
-        </div>
+            <div class="projects-intro">
 
+                <h2>
+                    چیزهایی که
+                    <span>ساخته‌ام</span>
+                </h2>
 
-        <!-- Parking Management -->
-        <div class="project-card">
+                <p>
+                    بخشی از پروژه‌هایی که در مسیر یادگیری
+                    و توسعه مهارت‌های برنامه‌نویسی و علوم کامپیوتر
+                    روی آن‌ها کار کرده‌ام.
+                </p>
 
-            <div class="project-number">02</div>
-
-            <h3>Parking Management System</h3>
-
-            <p>
-                سیستم مدیریت پارکینگ برای ثبت ورود و خروج خودروها،
-                مدیریت جای پارک، پرداخت و اطلاعات کاربران.
-            </p>
-
-            <div class="project-tags">
-                <span>Python</span>
-                <span>SQLite</span>
-                <span>Database</span>
             </div>
 
-            <a href="#" class="project-link">
-                مشاهده پروژه ←
-            </a>
 
-        </div>
+            <div class="projects-grid">
+
+                <!-- Project 01 -->
+
+                <article class="project-card featured">
+
+                    <div class="project-top">
+
+                        <span class="project-number">
+                            01
+                        </span>
+
+                        <span class="project-type">
+                            Database
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        EnergiTrack
+                    </h3>
+
+                    <p>
+                        یک سیستم مدیریت و تحلیل مصرف انرژی
+                        برای محیط‌های صنعتی که با تمرکز بر
+                        طراحی پایگاه داده و تحلیل اطلاعات توسعه داده شده است.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>PostgreSQL</span>
+                        <span>SQL</span>
+                        <span>Data Science</span>
+                    </div>
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                        class="project-link"
+                    >
+                        مشاهده پروژه
+                        <span>↗</span>
+                    </a>
+
+                </article>
 
 
-        <!-- Machine Learning -->
-        <div class="project-card">
+                <!-- Project 02 -->
 
-            <div class="project-number">03</div>
+                <article class="project-card">
 
-            <h3>Machine Learning Projects</h3>
+                    <div class="project-top">
 
-            <p>
-                مجموعه‌ای از پروژه‌های یادگیری ماشین
-                برای تمرین الگوریتم‌ها، تحلیل داده و ساخت مدل‌های پیش‌بینی.
-            </p>
+                        <span class="project-number">
+                            02
+                        </span>
 
-            <div class="project-tags">
-                <span>Python</span>
-                <span>Scikit-learn</span>
-                <span>Pandas</span>
+                        <span class="project-type">
+                            Software
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Parking Management System
+                    </h3>
+
+                    <p>
+                        سیستم مدیریت پارکینگ برای ثبت ورود و خروج
+                        خودروها، مدیریت جای پارک، پرداخت و
+                        اطلاعات کاربران.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>SQLite</span>
+                        <span>Database</span>
+                    </div>
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                        class="project-link"
+                    >
+                        مشاهده پروژه
+                        <span>↗</span>
+                    </a>
+
+                </article>
+
+
+                <!-- Project 03 -->
+
+                <article class="project-card">
+
+                    <div class="project-top">
+
+                        <span class="project-number">
+                            03
+                        </span>
+
+                        <span class="project-type">
+                            Machine Learning
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Machine Learning Projects
+                    </h3>
+
+                    <p>
+                        مجموعه‌ای از پروژه‌های یادگیری ماشین
+                        برای تمرین الگوریتم‌ها، تحلیل داده و
+                        ساخت مدل‌های پیش‌بینی.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>Pandas</span>
+                    </div>
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                        class="project-link"
+                    >
+                        مشاهده پروژه‌ها
+                        <span>↗</span>
+                    </a>
+
+                </article>
+
             </div>
 
-            <a href="#" class="project-link">
-                مشاهده پروژه‌ها ←
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
+        </section>
 
 
-        <!-- Contact -->
-        <section id="contact" class="section">
+        <!-- =========================
+             Tolpam Academy
+        ========================== -->
 
-    <p class="section-label">04 — ارتباط</p>
+        <section id="tolpam" class="section tolpm-section">
 
-    <div class="contact-content">
+            <div class="tolpam-card">
 
-        <div>
-            <h2>بیایید در ارتباط باشیم</h2>
+                <div class="tolpam-content">
 
-            <p>
-                اگر درباره پروژه‌ها، همکاری یا موضوعات مرتبط با
-                برنامه‌نویسی و هوش مصنوعی می‌خواهید با من در ارتباط باشید،
-                می‌توانید از طریق شبکه‌های اجتماعی با من تماس بگیرید.
-            </p>
-        </div>
+                    <span class="eyebrow">
+                        EDUCATIONAL CONTENT
+                    </span>
 
-        <div class="contact-links">
+                    <h2>
+                        Tolpam
+                        <span>Academy.</span>
+                    </h2>
 
-            <a href="#" target="_blank">
-                <span>GitHub</span>
-                <small>پروژه‌ها و کدهای من</small>
-            </a>
+                    <p>
+                        یک کانال آموزشی با هدف ارائه محتوای
+                        ساده، کاربردی و دانشگاهی در زمینه
+                        علوم کامپیوتر و ریاضیات.
+                    </p>
 
-            <a href="#" target="_blank">
-                <span>YouTube</span>
-                <small>ویدیوها و محتوای آموزشی</small>
-            </a>
+                    <div class="tolpam-actions">
 
-            <a href="#" target="_blank">
-                <span>Telegram</span>
-                <small>کانال و ارتباط با من</small>
-            </a>
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener"
+                            class="primary-button"
+                        >
+                            مشاهده کانال
+                            <span>↗</span>
+                        </a>
 
-        </div>
+                    </div>
 
-    </div>
+                </div>
 
-</section>
+
+                <div class="tolpam-mark">
+
+                    <div class="mark-circle">
+                        T
+                    </div>
+
+                    <span>
+                        Learn.
+                        Build.
+                        Share.
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             Journey
+        ========================== -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">05</span>
+                    <span class="section-label">مسیر من</span>
+                </div>
+
+                <span class="section-line"></span>
+
+            </div>
+
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            Education
+                        </span>
+
+                        <h3>
+                            مهندسی کامپیوتر
+                        </h3>
+
+                        <p>
+                            تحصیل در رشته مهندسی کامپیوتر
+                            و مطالعه مباحث بنیادی علوم کامپیوتر.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            Learning
+                        </span>
+
+                        <h3>
+                            توسعه مهارت‌های فنی
+                        </h3>
+
+                        <p>
+                            یادگیری برنامه‌نویسی، الگوریتم‌ها،
+                            پایگاه داده و مفاهیم مهندسی نرم‌افزار
+                            از طریق مطالعه و پروژه‌های عملی.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="timeline-item">
+
+                    <span class="timeline-dot"></span>
+
+                    <div class="timeline-content">
+
+                        <span class="timeline-date">
+                            Content
+                        </span>
+
+                        <h3>
+                            Tolpam Academy
+                        </h3>
+
+                        <p>
+                            شروع فعالیت در زمینه تولید محتوای
+                            آموزشی برای علاقه‌مندان به علوم کامپیوتر
+                            و ریاضیات.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             Contact
+        ========================== -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-number">06</span>
+                    <span class="section-label">ارتباط</span>
+                </div>
+
+                <span class="section-line"></span>
+
+            </div>
+
+
+            <div class="contact-grid">
+
+                <div class="contact-main">
+
+                    <span class="eyebrow">
+                        GET IN TOUCH
+                    </span>
+
+                    <h2>
+                        بیایید با هم
+                        <span>در ارتباط باشیم.</span>
+                    </h2>
+
+                    <p>
+                        اگر درباره پروژه‌ها، همکاری، برنامه‌نویسی،
+                        هوش مصنوعی یا تولید محتوای آموزشی
+                        می‌خواهید با من در ارتباط باشید،
+                        می‌توانید از طریق شبکه‌های اجتماعی
+                        با من تماس بگیرید.
+                    </p>
+
+                </div>
+
+
+                <div class="contact-links">
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div>
+                            <strong>GitHub</strong>
+                            <small>پروژه‌ها و کدهای من</small>
+                        </div>
+
+                        <span>↗</span>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div>
+                            <strong>YouTube</strong>
+                            <small>محتوای آموزشی من</small>
+                        </div>
+
+                        <span>↗</span>
+                    </a>
+
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div>
+                            <strong>Telegram</strong>
+                            <small>کانال و ارتباط با من</small>
+                        </div>
+
+                        <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
 
+    <!-- =========================
+         Footer
+    ========================== -->
+
     <footer>
-        <p>© 2026 پارسا زمانی — تمامی حقوق محفوظ است.</p>
+
+        <div class="footer-inner">
+
+            <a href="#home" class="footer-logo">
+                Parsa<span>.</span>
+            </a>
+
+            <p>
+                طراحی و توسعه توسط پارسا زمانی
+            </p>
+
+            <span class="copyright">
+                © 2026 Parsa Zamani
+            </span>
+
+        </div>
+
     </footer>
 
 </body>
 </html>
+```
