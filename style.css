@@ -365,22 +365,48 @@ a {
 .hero-socials {
     display: flex;
     align-items: center;
-    gap: 12px;
-
-    color: var(--text-muted);
+    gap: 18px;
 
     direction: ltr;
+
+    color: var(--text-muted);
 
     font-size: 13px;
 }
 
 .hero-socials a {
-    transition: var(--transition);
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    color: var(--text-muted);
+
+    transition: 0.3s ease;
 }
 
 .hero-socials a:hover {
-    color: var(--accent-light);
+    color: var(--white);
 }
+
+.hero-socials svg {
+    width: 17px;
+    height: 17px;
+
+    fill: currentColor;
+
+    transition: 0.3s ease;
+}
+
+.hero-socials a:hover svg {
+    color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.hero-socials span {
+    font-size: 12px;
+}
+
+
 
 
 /* =========================================================
