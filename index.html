@@ -1,11 +1,5 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-<style>
-    body {
-        background: #080b12 !important;
-        color: white !important;
-    }
-</style>
 <head>
     <meta charset="UTF-8">
 
@@ -52,6 +46,7 @@
         "image": "https://parsazamani.ir/acsses/profile.jpg",
         "jobTitle": "Computer Engineering Student",
         "description": "دانشجوی مهندسی کامپیوتر و علاقه‌مند به هوش مصنوعی، یادگیری ماشین، الگوریتم‌ها و مهندسی نرم‌افزار.",
+        "email": "parsazamani.uok@gmail.com",
         "sameAs": [
           "https://github.com/parsazamani1383",
           "https://www.youtube.com/@tolpamAcademy",
@@ -85,13 +80,28 @@
             Parsa<span>.</span>
         </a>
 
-        <nav class="desktop-nav">
+        <nav class="desktop-nav" aria-label="منوی اصلی">
             <a href="#about">درباره من</a>
             <a href="#skills">مهارت‌ها</a>
             <a href="#projects">پروژه‌ها</a>
             <a href="#tolpam">Tolpam Academy</a>
             <a href="#contact">ارتباط</a>
         </nav>
+
+        <details class="mobile-menu">
+            <summary aria-label="باز کردن منوی سایت">
+                <span></span>
+                <span></span>
+                <span></span>
+            </summary>
+            <nav aria-label="منوی موبایل">
+                <a href="#about">درباره من</a>
+                <a href="#skills">مهارت‌ها</a>
+                <a href="#projects">پروژه‌ها</a>
+                <a href="#tolpam">Tolpam Academy</a>
+                <a href="#contact">ارتباط</a>
+            </nav>
+        </details>
 
         <a href="#contact" class="nav-button">
             تماس با من
@@ -100,7 +110,7 @@
     </header>
 
 
-    <main>
+    <main id="main-content">
 
         <!-- =========================
              Hero
@@ -199,6 +209,8 @@
                         <img
                             src="acsses/profile.jpg"
                             alt="تصویر پارسا زمانی"
+                            loading="eager"
+                            decoding="async"
                         >
                     </div>
 
@@ -949,6 +961,15 @@
                         <div>
                             <strong>Telegram</strong>
                             <small>کانال و ارتباط با من</small>
+                        </div>
+
+                        <span>↗</span>
+                    </a>
+
+                    <a href="mailto:parsazamani.uok@gmail.com">
+                        <div>
+                            <strong>Email</strong>
+                            <small>parsazamani.uok@gmail.com</small>
                         </div>
 
                         <span>↗</span>
