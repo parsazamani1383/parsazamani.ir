@@ -1371,7 +1371,9 @@ summary:focus-visible {
 
     display: block;
 
-    object-fit: cover;
+    object-fit: contain;
+    padding: 8px;
+
     border-radius: 50%;
 
     transition: transform 0.45s ease;
@@ -1388,7 +1390,7 @@ summary:focus-visible {
 }
 
 .tolpam-mark:hover .mark-circle img {
-    transform: scale(1.06);
+    transform: scale(1.04);
 }
 
 .tolpam-mark > span {
